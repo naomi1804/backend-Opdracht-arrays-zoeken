@@ -51,4 +51,8 @@ if ($result) {
     echo "The target number is not found!";
 }
 
+echo "Number of elements in the list:" . number_format(count($numbers)), 0, ',', '.' . "<br>";
+echo "Time taken for the search: " . number_format($end_time - $start_time, 5) . " milliseconds</strong>";
+echo "</div>";
+
 ?>
