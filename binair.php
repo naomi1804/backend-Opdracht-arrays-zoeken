@@ -26,7 +26,7 @@ function binarysearch($array, $target, $low, $high) {
 }
 
 // makes a list of numbers (for example from 10 to 1000 in steps of 10)
-$numbers = range(10, 10000, 10); // this makes  a clean sorted array sorted from 100
+$numbers = range(10000, 1); // this makes  a clean sorted array sorted from 100
 
 // choose a number to search for in the list
 $target = 500; // if this number is changed it wil search for the inputtted number
