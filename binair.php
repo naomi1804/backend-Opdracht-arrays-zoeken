@@ -26,14 +26,20 @@ function binarysearch($array, $target, $low, $high) {
 }
 
 // makes a list of numbers (for example from 10 to 1000 in steps of 10)
-$numbers = range(10, 1000, 10); // this makes  a clean sorted array sorted from 100
+$numbers = range(10, 10000, 10); // this makes  a clean sorted array sorted from 100
 
 // choose a number to search for in the list
 $target = 500; // if this number is changed it wil search for the inputtted number
 
+// starts timer
+$start_time = microtime(true);
+
 // runs the binary search function
 // low begins at 0 and high at the last index of the array
 $result = binarysearch($numbers, $target, 0, count($numbers) - 1);
+
+// stops timer
+$end_time = microtime(true);
 
 // shows the result on the screen
 echo "<h3>Result of the binary search:</h3>";
